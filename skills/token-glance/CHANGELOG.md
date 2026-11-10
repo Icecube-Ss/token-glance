@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.1 — 2026-11-10
+
+**Docs: the view's host scope is now stated, not implied.**
+
+- Added `HOST-SUPPORT.md` (bilingual): which host gets which mode, why, a capability matrix
+  with the evidence found on disk, and the common misconceptions.
+- `README.md` / `README.zh.md` open with an IMPORTANT callout: Mode A is **DSH-only**; every
+  other host gets the report. The mode table no longer implies a "WorkBuddy-class host".
+- `SKILL.md` carries the same warning; its probe table now requires a session data contract in
+  addition to a view registry.
+- `skill.json`: `modes[].availableOn` / `notAvailableOn`, `entrypoints.hostSupport`, updated
+  per-host notes; the tagline says "on DSH" instead of "hosts that accept one".
+- `PUBLISHING.md`: listing metadata must say DSH-only; new rule against implying a panel
+  elsewhere.
+- No behaviour change; no file moved, no name changed.
+
 ## 2.0.0 — 2026-11-10
 
 **Breaking: the skill is renamed.** `session-overview` → `token-glance`, to match the

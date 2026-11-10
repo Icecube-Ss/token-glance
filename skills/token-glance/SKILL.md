@@ -1,10 +1,10 @@
 ---
 name: token-glance
-description: Use when the user asks for a session overview, session view, session dashboard, session state panel, or a compact status card of the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态), or asks to add an overview tab or panel to an agent host such as DSH or WorkBuddy. Delivers either an installed UI view or a no-UI overview report.
-description_en: Use when the user asks for a session overview, session view, session dashboard, or a compact status card of the current session, or asks to add an overview tab or panel to an agent host. Delivers either an installed UI view or a no-UI overview report.
+description: Use when the user asks for a session overview, session view, session dashboard, session state panel, or a compact status card of the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态). On DSH it can install a live view tab; every other host (WorkBuddy, Qoder, Codex, Doubao) gets the one-screen report, because only DSH exposes a session-scoped view registry.
+description_en: Use when the user asks for a session overview, session view, session dashboard, or a compact status card of the current session. Mode A (the live view tab) is DSH-only; every other host gets the one-screen text report. See HOST-SUPPORT.md.
 license: MIT
 metadata:
-  version: 2.0.0
+  version: 2.0.1
   modes: host-plugin, report
 ---
 
@@ -12,6 +12,12 @@ metadata:
 
 Deliver an overview of the current agent session: a live **view** when the host lets
 plugins extend its session UI, otherwise a compact **overview report**.
+
+> [!IMPORTANT]
+> **Mode A (the live view) is DSH-only.** WorkBuddy, Qoder, Codex, Doubao and every other
+> host get Mode B, the text report. A skill is instructions, not runtime code: it cannot
+> inject UI into a host that has no conversation-level plugin interface. See
+> `HOST-SUPPORT.md` before promising a panel anywhere else.
 
 Both modes share one contract — read only state the session already exposes, never invent
 a number, and state which mode and which evidence the result rests on.
@@ -22,7 +28,7 @@ Run the probe in `references/capability-probe.md`. In short:
 
 | Probe result | Mode |
 | --- | --- |
-| The host exposes a session-scoped view, tab, or panel registry (DSH Web UI, WorkBuddy-class host) | **A** — install a UI view |
+| The host exposes a session-scoped view, tab, or panel registry **and** a session data contract (today: DSH only) | **A** — install a UI view |
 | No UI extension exists, or the user only wants a status summary (Codex, Qoder, Doubao, CLI agents) | **B** — produce a report |
 
 If the platform is ambiguous, or Mode A needs profile-level change the user has not

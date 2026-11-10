@@ -15,7 +15,7 @@
 
 | 项目 | 分类 | 说明 |
 | --- | --- | --- |
-| [token-glance](skills/token-glance/README.md) | skill | 让 agent 一屏说清「这个会话正在干什么」：能扩展 UI 的宿主装成视图标签，其余宿主输出概览报告。支持 DSH / WorkBuddy / Codex / Qoder / 豆包 |
+| [token-glance](skills/token-glance/README.md) | skill | 让 agent 一屏说清「这个会话正在干什么」。**实时视图只在 DSH 可用**；WorkBuddy / Qoder / Codex / 豆包等宿主只能输出概览报告。原因与逐宿主证据见 [HOST-SUPPORT.md](skills/token-glance/HOST-SUPPORT.md) |
 
 ## 加一个新项目
 

@@ -20,8 +20,8 @@ Repository: <https://github.com/Icecube-Ss/token-glance>
 
 Repository settings:
 
-- **Description**: "A session status view for hosts that accept one, a one-screen overview
-  report for the rest. Works with DSH, WorkBuddy, Codex, Qoder, Doubao."
+- **Description**: "A live session view on DSH; a one-screen overview report on every other
+  host (WorkBuddy, Codex, Qoder, Doubao). Mode A is DSH-only — see HOST-SUPPORT.md."
 - **Topics**: `agent-skill`, `skills`, `session`, `overview`, `dashboard`, `dsh`, `workbuddy`,
   `codex`, `qoder`, `doubao`.
 - **LICENSE**: MIT is already present, with the copyright holder line set.
@@ -42,12 +42,16 @@ directly.
 | icon | `assets/icon.svg` (original artwork, 64×64 viewBox) |
 | category | `categories` |
 | tags | `tags` + `keywords` (Chinese keywords included so Chinese queries match) |
-| compatibility | `hosts[]` — each row states `support` and `verified` |
+| compatibility | `hosts[]` — each row states `support` and `verified`; `modes[].availableOn` marks the view as DSH-only |
 | permissions | `permissions` — filesystem read, no network, install requires approval |
 | entrypoint | `entrypoints.skill` (`SKILL.md`) |
 
 Keep `hosts[].verified` honest. A store that reprints "verified" for an adapter you never ran
 is worse than one that lists the adapter as `adapter only`.
+
+**Always state that the view is DSH-only.** Any listing line that implies a panel on
+WorkBuddy, Qoder, Codex, or Doubao is false: those hosts get the text report. `HOST-SUPPORT.md`
+carries the bilingual wording you can copy.
 
 ## 3. Screenshots
 
