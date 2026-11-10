@@ -8,7 +8,7 @@ repository name.
 - `SKILL.md` `name`, the skill folder, `skill.json` `id`, the Codex prompt
   (`/token-glance`), and the Qoder rule file all move together, because the name is the
   invocation key in DSH and the folder name in WorkBuddy.
-- `displayName.en` is now **Token Glance**; `displayName.zh` stays 会话概览, which is still
+- `displayName.en` is now **Token Glance**; `displayName.zh` is **Token Glance** too; the Chinese word 会话概览 stays only as a trigger and common noun
   what the skill does.
 - No behaviour change: same two modes, same probe, same report schema, same adapters.
 - The example plugin was renamed with the product: `examples/dsh-session-overview/` →

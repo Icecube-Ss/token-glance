@@ -2,7 +2,7 @@
   "id": "token-glance",
   "displayName": {
     "en": "Token Glance",
-    "zh": "会话概览"
+    "zh": "Token Glance"
   },
   "tagline": {
     "en": "A session status view for hosts that accept one, a one-screen overview report for the rest.",

@@ -1,4 +1,4 @@
-# 会话概览 · Token Glance
+# Token Glance
 
 一个可移植的 **skill**，只做一件事：让 agent 把"这一场会话到底在干什么"讲清楚。
 两种形态，靠探测决定，不靠猜。

@@ -50,11 +50,11 @@ window.__ModuleLoader__.load({
         'action.copyJson': 'Copy diagnostics',
         'action.copied': 'Copied',
         'action.failed': 'Copy failed',
-        'crash': 'The session overview could not read this session.',
+        'crash': 'Token Glance could not read this session.',
       },
       zh: {
         'view.label': '概览',
-        'view.title': '会话概览',
+        'view.title': 'Token Glance',
         'view.subtitle': '当前会话的实时状态，数据取自会话绑定。',
         'status.running': '运行中',
         'status.idle': '空闲',
@@ -84,7 +84,7 @@ window.__ModuleLoader__.load({
         'action.copyJson': '复制诊断信息',
         'action.copied': '已复制',
         'action.failed': '复制失败',
-        'crash': '会话概览无法读取当前会话。',
+        'crash': 'Token Glance 无法读取当前会话。',
       },
     };
 

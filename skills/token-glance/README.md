@@ -1,4 +1,4 @@
-# Token Glance — 会话概览
+# Token Glance
 
 A portable **skill** that gives an agent one job: show the user what this session is actually
 doing. Two delivery modes, chosen by a probe rather than a guess.

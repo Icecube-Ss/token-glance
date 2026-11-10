@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "会话概览",
+    "title": "Token Glance",
     "description": "在 Chat、Trajectory 旁新增「概览」页签，实时展示当前会话的状态、待处理提交与最近错误。"
   }
 }
