@@ -1,9 +1,9 @@
 {
-  "name": "@local/dsh-session-overview",
+  "name": "@local/dsh-token-glance",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Adds a Session Overview view tab beside Chat and Trajectory.",
+  "description": "Adds a Token Glance view tab beside Chat and Trajectory.",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

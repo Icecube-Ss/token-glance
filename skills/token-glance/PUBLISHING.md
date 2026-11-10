@@ -53,7 +53,7 @@ is worse than one that lists the adapter as `adapter only`.
 
 Screenshots must come from a real host with the view installed:
 
-1. Install `examples/dsh-session-overview/` on a DSH profile.
+1. Install `examples/dsh-token-glance/` on a DSH profile.
 2. Open a session, select the **Overview** tab.
 3. Capture the panel in light and dark themes, plus one Report-mode example.
 
@@ -90,6 +90,6 @@ screenshots and say the view is unverified visually — the image is not worth a
 - [ ] `SKILL.md` frontmatter parses; `name` and `description` present.
 - [ ] Every JSON file parses; `skill.json` has no unverified `verified` value.
 - [ ] No `node_modules`, no absolute local paths, no profile link paths, no `.push` logs.
-- [ ] `examples/dsh-session-overview/client.js` passes `node --check`.
+- [ ] `examples/dsh-token-glance/client.js` passes `node --check`.
 - [ ] No `AGENTS.md` inside the skill tree (only `*.snippet.md`) — an `AGENTS.md` there would
       be auto-loaded as standing instructions by hosts scanning the workspace.

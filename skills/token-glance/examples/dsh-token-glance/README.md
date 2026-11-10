@@ -1,4 +1,4 @@
-# @local/dsh-session-overview
+# @local/dsh-token-glance
 
 在 DSH Web UI 的会话页签栏中，在 Chat / Trajectory 旁新增一个「概览」（Overview）视图。
 
@@ -18,7 +18,7 @@
 | --- | --- |
 | `index.js` | Host 半个插件，仅用于让 bundle 可安装、可开关。 |
 | `client.js` | 浏览器模块：注册 `conversation.view` 单元格（id `overview`，order 20）并渲染视图。 |
-| `cordis.patch.yml` | 插入一行 `dsh-session-overview`。 |
+| `cordis.patch.yml` | 插入一行 `dsh-token-glance`。 |
 | `locale/en.json`、`locale/zh.json` | 插件列表里显示的标题与说明。 |
 | `icon.svg` | 插件图标（原创矢量图）。 |
 

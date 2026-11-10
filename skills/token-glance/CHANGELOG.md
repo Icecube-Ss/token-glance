@@ -11,9 +11,12 @@ repository name.
 - `displayName.en` is now **Token Glance**; `displayName.zh` stays 会话概览, which is still
   what the skill does.
 - No behaviour change: same two modes, same probe, same report schema, same adapters.
-- `examples/dsh-session-overview/` keeps its own package name: it is a standalone DSH plugin,
-  referenced by path, not by the skill name.
-- Existing installs must be re-installed under the new folder name.
+- The example plugin was renamed with the product: `examples/dsh-session-overview/` →
+  `examples/dsh-token-glance/`, package `@local/dsh-token-glance`, bundle id
+  `dsh-token-glance`. Its view id stays `overview` (that is the tab, not the product name),
+  so the verification row for occupant `overview` still holds.
+- Existing installs must be re-installed under the new folder name; an already-installed
+  example bundle must be reinstalled from `examples/dsh-token-glance/`.
 
 ## 1.0.0 — 2026-11-10
 
@@ -27,7 +30,7 @@ First release.
   packaging, install, pitfalls), Mode B schema and templates, verification checklist.
 - `agents/`: DSH, WorkBuddy, Codex, Qoder, Doubao, and a generic `AGENTS.snippet.md`.
 - `assets/`: icon and a self-contained HTML overview template.
-- `examples/dsh-session-overview/`: the DSH plugin that motivated this skill — a third view
+- `examples/dsh-token-glance/`: the DSH plugin that motivated this skill — a third view
   tab (`overview`, order 20) beside Chat and Trajectory.
 
 ### Verification status at release

@@ -1,5 +1,5 @@
 ---
-description: Session overview (Mode B) — one-screen status report for the current session.
+description: Token Glance (Mode B) — one-screen status report for the current session.
 ---
 
 # /token-glance
@@ -18,7 +18,7 @@ Produce a session overview of the current conversation. If a `SKILL.md` with
 ## Output
 
 ```markdown
-## Session overview
+## Token Glance
 
 **Overview** — <one sentence>.
 **State** — running · implementing

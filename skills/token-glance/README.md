@@ -24,7 +24,7 @@ references/
 agents/                      per-host install notes and adapters
   dsh/ workbuddy/ codex/ qoder/ doubao/ generic/
 assets/                      icon + self-contained HTML report template
-examples/dsh-session-overview/   the working DSH plugin behind Mode A
+examples/dsh-token-glance/   the working DSH plugin behind Mode A
 PUBLISHING.md                GitHub release and store listing checklist
 ```
 

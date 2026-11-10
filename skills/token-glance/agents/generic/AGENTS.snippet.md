@@ -3,7 +3,7 @@
      Keep this file named *.snippet.md: an AGENTS.md inside a skills tree would be loaded as
      standing instructions by any host that scans the workspace. -->
 
-## Session overview
+## Token Glance
 
 When the user asks for a session overview, session view, session dashboard, or a status card of
 the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态), follow the `token-glance`

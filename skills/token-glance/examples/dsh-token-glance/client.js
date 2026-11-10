@@ -1,5 +1,5 @@
 /**
- * Session Overview — a Conversation View beside Chat and Trajectory.
+ * Token Glance — a Conversation View beside Chat and Trajectory.
  *
  * It reads the current session through the slot's standard `useSession`
  * selector hook (SessionSnapshot) and renders: lifecycle chips, key metrics,
@@ -10,17 +10,17 @@
  * (the local error boundary keeps the rest of the session usable).
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-session-overview',
+  id: '@local/dsh-token-glance',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
-    const NS = 'dsh-session-overview';
+    const NS = 'dsh-token-glance';
     const VIEW_ID = 'overview';
 
     const DICTS = {
       en: {
         'view.label': 'Overview',
-        'view.title': 'Session overview',
+        'view.title': 'Token Glance',
         'view.subtitle': 'Live state of this session, read from the session binding.',
         'status.running': 'Running',
         'status.idle': 'Idle',

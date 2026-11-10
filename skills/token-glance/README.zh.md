@@ -23,7 +23,7 @@ references/
 agents/                      各宿主安装说明与适配文件
   dsh/ workbuddy/ codex/ qoder/ doubao/ generic/
 assets/                      图标 + 单文件 HTML 报告模板
-examples/dsh-session-overview/   形态 A 背后已装通的 DSH 插件
+examples/dsh-token-glance/   形态 A 背后已装通的 DSH 插件
 PUBLISHING.md                GitHub 发布与商店上架清单
 ```
 

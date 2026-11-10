@@ -40,7 +40,7 @@ Follow `references/mode-a-host-plugin.md`. Non-negotiables:
 5. Verify what is verifiable (module loads, entry registers, manifest parses) and say
    plainly when the rendered pixels were not observed.
 
-For DSH, `examples/dsh-session-overview/` is a working reference: a third view tab
+For DSH, `examples/dsh-token-glance/` is a working reference: a third view tab
 (`overview`, order 20) beside Chat and Trajectory, installed live on DSH 0.2.1-rc.5.
 
 ## 3. Mode B — overview report

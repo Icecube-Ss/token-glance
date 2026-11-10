@@ -47,10 +47,10 @@ Verified against DSH `0.2.1-rc.5`.
 To ship the skill without touching disk roots, a plugin can register it in memory from its
 Host half with `ctx.skills.register(...)` — same `name`/`description`/body, `runtime`
 provider. That path keeps the skill versioned with the bundle and avoids the two rows above.
-See `examples/dsh-session-overview/` for the bundle shape (that example ships the view, not
+See `examples/dsh-token-glance/` for the bundle shape (that example ships the view, not
 the skill body; the registration call is the only difference).
 
 ## Mode
 
-DSH exposes the `conversation.view` slot, so Mode A is available. `examples/dsh-session-overview/`
+DSH exposes the `conversation.view` slot, so Mode A is available. `examples/dsh-token-glance/`
 is the installed reference implementation.

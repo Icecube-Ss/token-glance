@@ -29,7 +29,7 @@ Eight fields, in this order. Omit nothing; write `unavailable` when a field has 
 ## Markdown template
 
 ```markdown
-## Session overview
+## Token Glance
 
 **Overview** — <one sentence>.
 **State** — running · implementing

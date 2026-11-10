@@ -87,7 +87,7 @@
     "install": "Mode A installs a plugin bundle into the host profile; require explicit user approval"
   },
   "assets": ["assets/icon.svg", "assets/report-template.html"],
-  "examples": ["examples/dsh-session-overview"],
+  "examples": ["examples/dsh-token-glance"],
   "keywords": [
     "会话概览",
     "会话视图",

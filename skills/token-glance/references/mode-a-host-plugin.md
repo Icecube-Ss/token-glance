@@ -65,7 +65,7 @@ Rules that keep this stable:
 
 ## 4. Packaging and install
 
-DSH bundle layout (see `examples/dsh-session-overview/`):
+DSH bundle layout (see `examples/dsh-token-glance/`):
 
 ```
 package.json          dsh.bundle.patch + dsh.client{platform:web, immediately, inject:[ui-conversation]}
