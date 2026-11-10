@@ -1,5 +1,17 @@
 # token-glance
 
+> **English** — One repository, many categorised projects: `skills/<name>/` for agent skills,
+> `projects/<name>/` for everything else. The first entry,
+> [token-glance](skills/token-glance/README.md), shows an agent what the current session is
+> doing. **Its live view runs on DSH only**: WorkBuddy, Qoder, Codex and Doubao get a
+> one-screen text report instead. Reasons and per-host evidence:
+> [HOST-SUPPORT.md](skills/token-glance/HOST-SUPPORT.md).
+>
+> **中文** — 本仓库按「分类目录 → 项目目录」两级组织，一个目录一个项目。第一个条目
+> [token-glance](skills/token-glance/README.md) 让 agent 一屏说清当前会话在干什么；
+> **它的实时视图只在 DSH 生效**，WorkBuddy / Qoder / Codex / 豆包只能输出概览报告，原因与
+> 逐宿主证据见 [HOST-SUPPORT.md](skills/token-glance/HOST-SUPPORT.md)。
+
 一个仓库装多个项目，按「分类目录 → 项目目录」两级组织。加新项目就是加一个文件夹，再在下面的索引里加一行。
 
 ## 目录约定
