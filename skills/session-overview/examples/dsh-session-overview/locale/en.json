@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Overview",
+    "description": "Adds an Overview tab beside Chat and Trajectory that shows this session's live state, pending submissions, and latest errors."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "session-overview",
+  "displayName": {
+    "en": "Session Overview",
+    "zh": "会话概览"
+  },
+  "tagline": {
+    "en": "A session status view for hosts that accept one, a one-screen overview report for the rest.",
+    "zh": "能扩展 UI 的宿主装视图，其余的宿主出一屏会话概览。"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "entrypoints": {
+    "skill": "SKILL.md",
+    "readme": "README.md",
+    "readmeZh": "README.zh.md"
+  },
+  "categories": ["developer-tools", "productivity", "ui"],
+  "tags": ["session", "overview", "dashboard", "plugin", "report", "dsh", "workbuddy"],
+  "modes": [
+    {
+      "id": "host-plugin",
+      "summary": "Install a session-scoped view/tab into a host that exposes a UI registry.",
+      "requires": ["session-scoped view registry", "host theme tokens", "host locale service"],
+      "reference": "references/mode-a-host-plugin.md"
+    },
+    {
+      "id": "report",
+      "summary": "Emit a one-screen Markdown or HTML overview from facts already in the session.",
+      "requires": ["file read access (recommended, not required)"],
+      "reference": "references/mode-b-report.md"
+    }
+  ],
+  "hosts": [
+    {
+      "id": "dsh",
+      "label": "DeepSeek Harness",
+      "support": "native-skill",
+      "verified": "0.2.1-rc.5: discovered from .agents/skills and loaded by name",
+      "install": "agents/dsh/README.md",
+      "notes": "SKILL.md is the native format; discovery roots include <project>/.agents/skills and <project>/.dsh/skills."
+    },
+    {
+      "id": "workbuddy",
+      "label": "WorkBuddy",
+      "support": "native-skill",
+      "verified": "builtin skill layout inspected on disk",
+      "install": "agents/workbuddy/README.md",
+      "notes": "Same SKILL.md folder layout; description_en and license are tolerated extra keys."
+    },
+    {
+      "id": "codex",
+      "label": "Codex CLI",
+      "support": "prompt-pack",
+      "verified": "adapter only",
+      "install": "agents/codex/README.md",
+      "notes": "No local skill directory contract assumed: use the AGENTS.md snippet or the custom prompt."
+    },
+    {
+      "id": "qoder",
+      "label": "Qoder",
+      "support": "rule-pack",
+      "verified": "adapter only",
+      "install": "agents/qoder/README.md",
+      "notes": "Rule file plus AGENTS.md snippet; treat as Mode B unless the host exposes a view registry."
+    },
+    {
+      "id": "doubao",
+      "label": "Doubao agent",
+      "support": "prompt-pack",
+      "verified": "adapter only",
+      "install": "agents/doubao/agent-instructions.md",
+      "notes": "Paste-ready agent instructions; report mode only."
+    },
+    {
+      "id": "generic",
+      "label": "Any other agent",
+      "support": "prompt-pack",
+      "verified": "adapter only",
+      "install": "agents/generic/AGENTS.snippet.md",
+      "notes": "System-prompt or AGENTS.md fragment; the agent follows SKILL.md in this repo."
+    }
+  ],
+  "permissions": {
+    "filesystem": "read (Mode B evidence); write only for the HTML report the user asked for",
+    "network": "none",
+    "install": "Mode A installs a plugin bundle into the host profile; require explicit user approval"
+  },
+  "assets": ["assets/icon.svg", "assets/report-template.html"],
+  "examples": ["examples/dsh-session-overview"],
+  "keywords": [
+    "会话概览",
+    "会话视图",
+    "会话面板",
+    "当前会话状态",
+    "session overview",
+    "session view",
+    "session dashboard",
+    "session status"
+  ]
+}
