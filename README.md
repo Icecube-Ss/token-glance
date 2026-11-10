@@ -1,4 +1,4 @@
-# icecube_codebase
+# token-glance
 
 一个仓库装多个项目，按「分类目录 → 项目目录」两级组织。加新项目就是加一个文件夹，再在下面的索引里加一行。
 
@@ -34,8 +34,8 @@
 ## 本地克隆
 
 ```bash
-git clone https://github.com/Icecube-Ss/icecube_codebase.git
-cd icecube_codebase
+git clone https://github.com/Icecube-Ss/token-glance.git
+cd token-glance
 ```
 
 ## License
