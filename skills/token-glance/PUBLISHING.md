@@ -36,7 +36,7 @@ directly.
 | id / slug | `skill.json` → `id` (`token-glance`; keep kebab-case, it is also the skill name) |
 | name | `displayName.en` / `displayName.zh` |
 | tagline | `tagline` |
-| long description | `README.md` / `README.zh.md` |
+| long description | `README.md` (bilingual, 中文 then English) |
 | version | `version`, mirrored in `SKILL.md` `metadata.version` |
 | license | `LICENSE` |
 | icon | `assets/icon.svg` (original artwork, 64×64 viewBox) |

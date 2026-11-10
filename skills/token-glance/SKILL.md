@@ -4,7 +4,7 @@ description: Use when the user asks for a session overview, session view, sessio
 description_en: Use when the user asks for a session overview, session view, session dashboard, or a compact status card of the current session. Mode A (the live view tab) is DSH-only; every other host gets the one-screen text report. See HOST-SUPPORT.md.
 license: MIT
 metadata:
-  version: 2.0.1
+  version: 2.0.2
   modes: host-plugin, report
 ---
 

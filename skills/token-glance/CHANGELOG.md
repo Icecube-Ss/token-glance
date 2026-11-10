@@ -1,13 +1,26 @@
 # Changelog
 
+## 2.0.2 — 2026-11-10
+
+**Docs: one README instead of two.**
+
+- `README.md` and `README.zh.md` are merged into a single bilingual `README.md` — 中文 first,
+  English under `## English`, with one shared IMPORTANT callout at the top. The repo owner
+  asked for one file, not a language split.
+- `README.zh.md` is removed; `skill.json` drops the `entrypoints.readmeZh` field, and the
+  `PUBLISHING.md` listing table now points at the single file.
+- `skill.json` `tagline.zh` now says "DSH 上装实时视图，其余宿主出一屏会话概览" (the 2.0.1
+  wording change had missed the Chinese string).
+- No behaviour change.
+
 ## 2.0.1 — 2026-11-10
 
 **Docs: the view's host scope is now stated, not implied.**
 
 - Added `HOST-SUPPORT.md` (bilingual): which host gets which mode, why, a capability matrix
   with the evidence found on disk, and the common misconceptions.
-- `README.md` / `README.zh.md` open with an IMPORTANT callout: Mode A is **DSH-only**; every
-  other host gets the report. The mode table no longer implies a "WorkBuddy-class host".
+- `README.md` opens with an IMPORTANT callout: Mode A is **DSH-only**; every other host gets
+  the report. The mode table no longer implies a "WorkBuddy-class host".
 - `SKILL.md` carries the same warning; its probe table now requires a session data contract in
   addition to a view registry.
 - `skill.json`: `modes[].availableOn` / `notAvailableOn`, `entrypoints.hostSupport`, updated

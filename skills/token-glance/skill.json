@@ -6,14 +6,13 @@
   },
   "tagline": {
     "en": "A live session view on DSH; a one-screen overview report on every other host.",
-    "zh": "能扩展 UI 的宿主装视图，其余的宿主出一屏会话概览。"
+    "zh": "DSH 上装实时视图，其余宿主出一屏会话概览。"
   },
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "entrypoints": {
     "skill": "SKILL.md",
     "readme": "README.md",
-    "readmeZh": "README.zh.md",
     "hostSupport": "HOST-SUPPORT.md"
   },
   "categories": ["developer-tools", "productivity", "ui"],
