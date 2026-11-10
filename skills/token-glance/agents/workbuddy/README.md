@@ -19,10 +19,10 @@ host behaves as for any ordinary skill.
 
 ## Where to put it
 
-- Workspace or plugin skill folder: `skills/session-overview/` with `SKILL.md` plus
+- Workspace or plugin skill folder: `skills/token-glance/` with `SKILL.md` plus
   `references/`, `assets/`, `examples/` beside it.
 - Builtin-style location, when you control a plugin package:
-  `<plugin>/skills/session-overview/SKILL.md`.
+  `<plugin>/skills/token-glance/SKILL.md`.
 
 ## Marketplace route
 

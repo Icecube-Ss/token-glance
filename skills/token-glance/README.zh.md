@@ -1,4 +1,4 @@
-# 会话概览 · Session Overview
+# 会话概览 · Token Glance
 
 一个可移植的 **skill**，只做一件事：让 agent 把"这一场会话到底在干什么"讲清楚。
 两种形态，靠探测决定，不靠猜。
@@ -39,7 +39,7 @@ PUBLISHING.md                GitHub 发布与商店上架清单
 | 其它 | `AGENTS` 片段 | `agents/generic/AGENTS.snippet.md` |
 
 DSH 最短路径：把 `SKILL.md`、`references/`、`assets/`、`examples/` 复制到
-`<项目>/.agents/skills/session-overview/`，再启用 `skill-filesystem` 与 `tool-skill`
+`<项目>/.agents/skills/token-glance/`，再启用 `skill-filesystem` 与 `tool-skill`
 两行（默认都是关闭的），否则目录扫描不到这个技能。
 
 ## 验证状态
@@ -47,7 +47,7 @@ DSH 最短路径：把 `SKILL.md`、`references/`、`assets/`、`examples/` 复�
 | 结论 | 证据 |
 | --- | --- |
 | 形态 A 在 DSH 0.2.1-rc.5 可用 | bundle 安装返回 `application: applied`；`conversation.view` 的 occupant 出现 `overview`，order 20，`active: true` |
-| 技能发现在 DSH 0.2.1-rc.5 | 复制到 `.agents/skills/session-overview/` 后出现在实时目录中，并按名字成功加载，未改动 profile 开关 |
+| 技能发现在 DSH 0.2.1-rc.5 | 复制到 `.agents/skills/token-glance/` 后出现在实时目录中，并按名字成功加载，未改动 profile 开关 |
 | 形态 A 的实际画面 | **未观察**——编写会话没有浏览器控制；示例自带错误边界，形状变化只会影响面板本身 |
 | WorkBuddy 技能目录规范 | 对照磁盘上随包发布的 builtin skills 核对过 |
 | Codex / Qoder / 豆包 适配 | 提示词与规则包，未在这三个宿主上实际执行 |

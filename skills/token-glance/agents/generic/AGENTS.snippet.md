@@ -6,10 +6,10 @@
 ## Session overview
 
 When the user asks for a session overview, session view, session dashboard, or a status card of
-the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态), follow the `session-overview`
+the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态), follow the `token-glance`
 skill.
 
-- Read `SKILL.md` at the root of the `session-overview` package when it is reachable, then the
+- Read `SKILL.md` at the root of the `token-glance` package when it is reachable, then the
   reference it points to. `references/capability-probe.md` decides the mode; `references/mode-b-report.md`
   is the report schema.
 - If the package is not reachable, apply the short form: one-screen Markdown with these headings —

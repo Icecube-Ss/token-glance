@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.0.0 — 2026-11-10
+
+**Breaking: the skill is renamed.** `session-overview` → `token-glance`, to match the
+repository name.
+
+- `SKILL.md` `name`, the skill folder, `skill.json` `id`, the Codex prompt
+  (`/token-glance`), and the Qoder rule file all move together, because the name is the
+  invocation key in DSH and the folder name in WorkBuddy.
+- `displayName.en` is now **Token Glance**; `displayName.zh` stays 会话概览, which is still
+  what the skill does.
+- No behaviour change: same two modes, same probe, same report schema, same adapters.
+- `examples/dsh-session-overview/` keeps its own package name: it is a standalone DSH plugin,
+  referenced by path, not by the skill name.
+- Existing installs must be re-installed under the new folder name.
+
 ## 1.0.0 — 2026-11-10
 
 First release.
@@ -20,7 +35,7 @@ First release.
 | Item | Status |
 | --- | --- |
 | Mode A on DSH 0.2.1-rc.5 | Installed and live: `conversation.view` occupant `overview`, `active: true`; bundle install returned `applied` |
-| Skill discovery on DSH 0.2.1-rc.5 | Copied to `.agents/skills/session-overview/`; listed in the catalog and loaded by name |
+| Skill discovery on DSH 0.2.1-rc.5 | Copied to `.agents/skills/token-glance/`; listed in the catalog and loaded by name |
 | Mode A rendered pixels | Not observed (no browser control in the authoring session) |
 | WorkBuddy skill layout | Verified against the shipped builtin skills on disk |
 | Codex / Qoder / Doubao adapters | Written as prompt and rule packs; not executed on those hosts |

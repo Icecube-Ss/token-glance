@@ -11,8 +11,8 @@ look for this skill's `SKILL.md` in the repository.
 
 ## Option 2 — custom prompt
 
-Copy `agents/codex/prompts/session-overview.md` to `~/.codex/prompts/session-overview.md`
-when your Codex build supports custom prompts, then invoke it as `/session-overview`.
+Copy `agents/codex/prompts/token-glance.md` to `~/.codex/prompts/token-glance.md`
+when your Codex build supports custom prompts, then invoke it as `/token-glance`.
 
 The prompt is self-contained: it carries the report schema, so it works even when the
 repository is not checked out next to the agent.
@@ -25,5 +25,5 @@ Codex build adds a session-view registry, switch to Mode A using
 
 ## Caveat
 
-Custom-prompt support has changed across Codex releases. If `/session-overview` does not
+Custom-prompt support has changed across Codex releases. If `/token-glance` does not
 appear, use Option 1 and say so in the hand-off instead of assuming the prompt loaded.

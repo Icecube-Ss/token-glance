@@ -1,14 +1,14 @@
 {
-  "id": "session-overview",
+  "id": "token-glance",
   "displayName": {
-    "en": "Session Overview",
+    "en": "Token Glance",
     "zh": "会话概览"
   },
   "tagline": {
     "en": "A session status view for hosts that accept one, a one-screen overview report for the rest.",
     "zh": "能扩展 UI 的宿主装视图，其余的宿主出一屏会话概览。"
   },
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "entrypoints": {
     "skill": "SKILL.md",
@@ -93,6 +93,8 @@
     "会话视图",
     "会话面板",
     "当前会话状态",
+    "token glance",
+    "token-glance",
     "session overview",
     "session view",
     "session dashboard",

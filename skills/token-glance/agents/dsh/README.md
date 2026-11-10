@@ -10,7 +10,7 @@ Verified against DSH `0.2.1-rc.5`.
    directory with a kebab-case name:
 
    ```
-   <project>/.agents/skills/session-overview/SKILL.md
+   <project>/.agents/skills/token-glance/SKILL.md
    ```
 
    Scanned roots, by priority: `<project>/.dsh/skills` (100), `<project>/.agents/skills`
@@ -18,7 +18,7 @@ Verified against DSH `0.2.1-rc.5`.
    The project root is the nearest ancestor containing `.git`.
 
 2. Verify discovery from the agent: load the skill by its exact kebab-case name
-   (`session-overview`). A load that returns the body proves discovery; a plain file copy
+   (`token-glance`). A load that returns the body proves discovery; a plain file copy
    proves nothing.
 
    Verified on `0.2.1-rc.5`: after the copy the skill appeared in the live catalog and loaded
@@ -40,7 +40,7 @@ Verified against DSH `0.2.1-rc.5`.
   `<root>/<name>.md` at a scanned root counts. Copying the whole repository in and pointing a
   root at it will not register this skill.
 - **A skill without a mounted provider is invisible.** If the catalog does not list
-  `session-overview`, check the provider rows before debugging the frontmatter.
+  `token-glance`, check the provider rows before debugging the frontmatter.
 
 ## Bundle alternative
 

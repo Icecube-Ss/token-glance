@@ -5,16 +5,18 @@ does not ship an optimistic claim.
 
 ## 1. GitHub repository
 
+The skill ships inside the `token-glance` repository at `skills/token-glance/`, so a release
+is a normal push plus a tag:
+
 ```bash
-git init
-git add .
-git commit -m "feat: session-overview skill 1.0.0"
-git branch -M main
-git remote add origin git@github.com:<you>/session-overview-skill.git
-git push -u origin main
-git tag -a v1.0.0 -m "session-overview 1.0.0"
-git push origin v1.0.0
+git add skills/token-glance
+git commit -m "release: token-glance 2.0.0"
+git push
+git tag -a token-glance-v2.0.0 -m "token-glance 2.0.0"
+git push origin token-glance-v2.0.0
 ```
+
+Repository: <https://github.com/Icecube-Ss/token-glance>
 
 Repository settings:
 
@@ -22,8 +24,7 @@ Repository settings:
   report for the rest. Works with DSH, WorkBuddy, Codex, Qoder, Doubao."
 - **Topics**: `agent-skill`, `skills`, `session`, `overview`, `dashboard`, `dsh`, `workbuddy`,
   `codex`, `qoder`, `doubao`.
-- **LICENSE**: MIT is already present. Replace the copyright holder line with your name or
-  handle before the first public push.
+- **LICENSE**: MIT is already present, with the copyright holder line set.
 
 ## 2. Listing metadata
 
@@ -32,7 +33,7 @@ directly.
 
 | Listing field | Source |
 | --- | --- |
-| id / slug | `skill.json` → `id` (`session-overview`; keep kebab-case, it is also the skill name) |
+| id / slug | `skill.json` → `id` (`token-glance`; keep kebab-case, it is also the skill name) |
 | name | `displayName.en` / `displayName.zh` |
 | tagline | `tagline` |
 | long description | `README.md` / `README.zh.md` |
@@ -61,7 +62,7 @@ screenshots and say the view is unverified visually — the image is not worth a
 
 ## 4. Per-store notes
 
-- **DSH**: ship either the skill folder (`.agents/skills/session-overview/`, needs
+- **DSH**: ship either the skill folder (`.agents/skills/token-glance/`, needs
   `skill-filesystem` + `tool-skill`) or a bundle that registers the skill in memory through
   `ctx.skills.register`. The view itself installs with `plugin_manager install_bundle`
   (absolute directory), and verification is the live slot occupant, not the install log.
@@ -76,10 +77,11 @@ screenshots and say the view is unverified visually — the image is not worth a
 
 ## 5. Release rules
 
-- Semver. A new view id or a report-schema change is **minor**; a msg-id or field rename that
-  breaks existing consumers is **major**.
-- Never rename the skill: `name` is the invocation key in DSH and the folder name in
-  WorkBuddy.
+- Semver. A new view id or a report-schema change is **minor**; a field rename or a skill
+  rename that breaks existing consumers is **major**.
+- The skill name is frozen at 2.0.0: `name` is the invocation key in DSH and the folder name
+  in WorkBuddy. The 1.0.0 → 2.0.0 rename (`session-overview` → `token-glance`) was a one-time
+  break, aligned with the repository name; do not repeat it.
 - Update `CHANGELOG.md` and the verification table in the same commit as the change.
 - Keep `hosts[]` and `agents/` in sync: adding a host without an adapter file is a broken row.
 

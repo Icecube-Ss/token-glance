@@ -2,10 +2,10 @@
 description: Session overview (Mode B) — one-screen status report for the current session.
 ---
 
-# /session-overview
+# /token-glance
 
 Produce a session overview of the current conversation. If a `SKILL.md` with
-`name: session-overview` is reachable from the repository root, read it plus
+`name: token-glance` is reachable from the repository root, read it plus
 `references/mode-b-report.md` and follow them. Otherwise apply the rules below.
 
 ## Rules

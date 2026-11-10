@@ -1,4 +1,4 @@
-# Session Overview — 会话概览
+# Token Glance — 会话概览
 
 A portable **skill** that gives an agent one job: show the user what this session is actually
 doing. Two delivery modes, chosen by a probe rather than a guess.
@@ -40,7 +40,7 @@ PUBLISHING.md                GitHub release and store listing checklist
 | Anything else | `AGENTS` fragment | `agents/generic/AGENTS.snippet.md` |
 
 Shortest path on DSH: copy `SKILL.md`, `references/`, `assets/`, `examples/` into
-`<project>/.agents/skills/session-overview/`, then enable the `skill-filesystem` and
+`<project>/.agents/skills/token-glance/`, then enable the `skill-filesystem` and
 `tool-skill` rows (both are disabled by default) so the catalog can see the folder.
 
 ## Verification status
@@ -48,7 +48,7 @@ Shortest path on DSH: copy `SKILL.md`, `references/`, `assets/`, `examples/` int
 | Claim | Evidence |
 | --- | --- |
 | Mode A works on DSH 0.2.1-rc.5 | Bundle installed (`application: applied`); `conversation.view` lists occupant `overview`, order 20, `active: true` |
-| Skill discovery on DSH 0.2.1-rc.5 | Copied to `.agents/skills/session-overview/`; listed in the live catalog and loaded by its exact name, with no profile toggle |
+| Skill discovery on DSH 0.2.1-rc.5 | Copied to `.agents/skills/token-glance/`; listed in the live catalog and loaded by its exact name, with no profile toggle |
 | Mode A visual result | **Not observed** — the authoring session had no browser control; the example's own error boundary keeps a shape surprise inside the panel |
 | WorkBuddy skill layout | Verified against the builtin skills shipped on disk |
 | Codex / Qoder / Doubao adapters | Prompt and rule packs; not executed on those hosts |

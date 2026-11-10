@@ -6,7 +6,7 @@
 
 | 目录 | 放什么 | 命名 |
 | --- | --- | --- |
-| `skills/` | 给 AI agent 用的 skill（`SKILL.md` + 参考资料 + 示例），一个子目录一个 skill | 小写 + 短横线，如 `session-overview` |
+| `skills/` | 给 AI agent 用的 skill（`SKILL.md` + 参考资料 + 示例），一个子目录一个 skill | 小写 + 短横线，如 `token-glance` |
 | `projects/` | 完整项目、小工具、练习代码，一个子目录一个项目 | 小写 + 短横线，如 `csv-cleaner` |
 
 每个项目目录里都放一个自己的 `README.md`，写清楚「做什么 / 怎么跑 / 依赖什么」。
@@ -15,7 +15,7 @@
 
 | 项目 | 分类 | 说明 |
 | --- | --- | --- |
-| [session-overview](skills/session-overview/README.md) | skill | 让 agent 一屏说清「这个会话正在干什么」：能扩展 UI 的宿主装成视图标签，其余宿主输出概览报告。支持 DSH / WorkBuddy / Codex / Qoder / 豆包 |
+| [token-glance](skills/token-glance/README.md) | skill | 让 agent 一屏说清「这个会话正在干什么」：能扩展 UI 的宿主装成视图标签，其余宿主输出概览报告。支持 DSH / WorkBuddy / Codex / Qoder / 豆包 |
 
 ## 加一个新项目
 

@@ -1,14 +1,14 @@
 ---
-name: session-overview
+name: token-glance
 description: Use when the user asks for a session overview, session view, session dashboard, session state panel, or a compact status card of the current session (会话概览 / 会话视图 / 会话面板 / 当前会话状态), or asks to add an overview tab or panel to an agent host such as DSH or WorkBuddy. Delivers either an installed UI view or a no-UI overview report.
 description_en: Use when the user asks for a session overview, session view, session dashboard, or a compact status card of the current session, or asks to add an overview tab or panel to an agent host. Delivers either an installed UI view or a no-UI overview report.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 2.0.0
   modes: host-plugin, report
 ---
 
-# Session Overview
+# Token Glance
 
 Deliver an overview of the current agent session: a live **view** when the host lets
 plugins extend its session UI, otherwise a compact **overview report**.

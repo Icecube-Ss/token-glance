@@ -5,10 +5,10 @@ adapters; neither is a verified runtime extension.
 
 ## Option 1 — rule file
 
-Copy `agents/qoder/rules/session-overview.md` to:
+Copy `agents/qoder/rules/token-glance.md` to:
 
 ```
-<project>/.qoder/rules/session-overview.md
+<project>/.qoder/rules/token-glance.md
 ```
 
 Use it as an on-demand rule so it only fires when the user asks for a session overview.
